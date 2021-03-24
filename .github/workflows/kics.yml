@@ -7,7 +7,7 @@ on:
 jobs:
   kics-job:
     runs-on: ubuntu-latest
-    name: checkov-action
+    name: kics-action
     steps:
       - name: Checkout repo
         uses: actions/checkout@v2
