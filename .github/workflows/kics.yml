@@ -1,6 +1,6 @@
 name: build
 on:
-  pull_request
+  pull_request  
 jobs:
   kics-job:
     runs-on: ubuntu-latest
@@ -9,8 +9,8 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v2
 
-      - name: Run Kics action
+      - name: KICS Github Action
         id: kics
-        uses: 
+        uses: Checkmarx/kics-github-action@v1.0
         with:
-          directory: terraform/
+          path: terraform/
