@@ -1,6 +1,9 @@
-name: build
+name: kics_check
 on:
-  pull_request  
+  pull_request:
+    branches: [master]
+  push: 
+    branches: [master]
 jobs:
   kics-job:
     runs-on: ubuntu-latest
