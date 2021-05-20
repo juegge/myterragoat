@@ -16,7 +16,7 @@ jobs:
         id: kics
         uses: checkmarx/kics-github-action@v1.2
         with:
-          path: terraform/
+          path: 'terraform'
           output_path: 'results.sarif'
           
       - name: Upload SARIF file
