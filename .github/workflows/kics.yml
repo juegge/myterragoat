@@ -14,7 +14,7 @@ jobs:
 
       - name: KICS Github Action
         id: kics
-        uses: Checkmarx/kics-github-action@1.2
+        uses: Checkmarx/kics-github-action@v1.2
         with:
           path: 'terraform'
           output_path: 'results.sarif'
